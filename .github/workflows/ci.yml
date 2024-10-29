@@ -77,7 +77,7 @@ jobs:
         run: ./ci-scripts/setup-${{ matrix.name }}.sh ${{ matrix.setup_opts }}
 
       - name: Configure
-        run: ./configure.sh --${{ matrix.name }} --debug --python --smtlib-reader
+        run: ./configure.sh --${{ matrix.name }} --debug --static --python --smtlib-reader
 
       - name: Build
         run: |
